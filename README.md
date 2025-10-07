@@ -88,7 +88,7 @@ Contributions are welcome! Please read our contributing guidelines before submit
 
 ### Our Popular Destinations
 
-![Tropical Paradise Getway](./src/assets/bali-beach.jpg)
+![Tropical Paradise Getway](./src/assets/bali-beach.avif)
 **Tropical Paradise Getway**
 
 - Location: Bali
@@ -97,7 +97,7 @@ Contributions are welcome! Please read our contributing guidelines before submit
 - Price: 38000 EGP
   Experience beautiful beaches and rich culture of Bali
 
-![European Adventure](./src/assets/european-city.jpg)
+![European Adventure](./src/assets/european-city.avif)
 **European Adventure**
 Explore the city of love with our guided tour package
 

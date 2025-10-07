@@ -65,28 +65,30 @@ const tours = [
 
 function Home({ onTourSelect }) {
  return(
-  <div className="container mx-auto px-4 py-8">
-    <div className="text-center mb-12">
-      <h1 className="text-5xl font-bold text-gray-800 mb-4">
-        Discover Amazing Tours with us
-      </h1>
-      <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-        Explore the world with our carefully curated tour packages.
-        From tropical beaches to mountain hikes, we have something for everyone
-      </p>
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {tours.map(tour => (
-        <TourCard key={tour.id}
-        tour={tour}
-        onSelect={onTourSelect}/>
-      ))}
+  <>
+    <div className="container mx-auto px-4 py-8">
+      <div className="text-center mb-12">
+        <h1 className="text-5xl font-bold text-gray-800 mb-4">
+          Discover Amazing Tours with us
+        </h1>
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          Explore the world with our carefully curated tour packages.
+          From tropical beaches to mountain hikes, we have something for everyone
+        </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {tours.map(tour => (
+          <TourCard key={tour.id}
+          tour={tour}
+          onSelect={onTourSelect}/>
+        ))}
 
+      </div>
+      
     </div>
-    
     <Footer></Footer>
-  </div>
-  
+  </>
+    
 
  )
 }

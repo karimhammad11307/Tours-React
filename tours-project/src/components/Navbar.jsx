@@ -4,12 +4,12 @@ import Home from "../pages/Home";
 
 function Navbar({ currentPage, onPageChange }) {
   return (
-    <nav className=" bg-blue-600 text-white shadow-lg">
+    <nav className=" bg-blue-600 text-white shadow-lg w-full max-w-full">
       <div className="container mx-auto px-2 max-w-screen">
         <div className="flex justify-between items-center py-1">
           <img src={logo} alt="logo" className="h-30 w-auto mr-4 cursor-pointer" />
           <div
-            className="text-2xl font-bold cursor-pointer"
+            className="text-3xl font-bold cursor-pointer "
             onClick={() => onPageChange("home")}
           >
             Travista

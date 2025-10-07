@@ -40,7 +40,10 @@ function App() {
     <>
       <div className=' min-h-screen bg-gray-50 w-full overflow-x-hidden'>
         <Navbar currentPage = {currentPage} onPageChange = {setCurrentPage}/>
-        {renderPage()}
+        <main className='w-full'>
+          {renderPage()}
+        </main>
+        
       </div>
     </>
   )

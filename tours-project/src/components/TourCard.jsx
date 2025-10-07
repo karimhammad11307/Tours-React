@@ -1,7 +1,7 @@
 function TourCard({tour,onSelect}){
     return(
-        <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl 
-        transition-shadow cursor-pointer transform hover:scale-105 duration-1000"
+        <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-2xl 
+        transition-all cursor-pointer transform hover:scale-105 duration-400"
         onClick={() => onSelect(tour)}>
             <img src={tour.image} alt="tour.name" 
             className="w-full h-48 object-cover"/>

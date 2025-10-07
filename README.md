@@ -88,7 +88,7 @@ Contributions are welcome! Please read our contributing guidelines before submit
 
 ### Our Popular Destinations
 
-![European Adventure](./tours-project/src/assets/bali-beach.avif)
+<img src="./tours-project/src/assets/bali-beach.avif" alt="Tropical Paradise Getway" width="600"/>
 
 **Tropical Paradise Getway**
 
@@ -98,12 +98,12 @@ Contributions are welcome! Please read our contributing guidelines before submit
 - Price: 38000 EGP
   Experience beautiful beaches and rich culture of Bali
 
-![European Adventure](./tours-project/src/assets/european-city.avif)
+<img src="./tours-project/src/assets/european-city.avif" alt="Tropical Paradise Getway" width="600"/>
 
 **European Adventure**
 Explore the city of love with our guided tour package
 
-![Mountain Trekking](./tours-project/src/assets/mountain-trek.jpg)
+<img src="./tours-project/src/assets/mountain-trek.jpg" alt="Tropical Paradise Getway" width="600"/>
 
 **Mountain Trekking**
 Adventure through the breathtaking Swiss mountains

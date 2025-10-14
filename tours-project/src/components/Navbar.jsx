@@ -45,7 +45,7 @@ function Navbar({ currentPage, onPageChange }) {
           <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
             <button
               onClick={() => onPageChange("home")}
-              className={`hover:text-blue-200 transition-colors ${
+              className={`hover:text-blue-200 transition-colors hover:cursor-pointer ${
                 currentPage === "home" ? "text-blue-200 font-semibold" : ""
               }`}
             >
@@ -53,7 +53,7 @@ function Navbar({ currentPage, onPageChange }) {
             </button>
             <button
               onClick={() => onPageChange("about")}
-              className={`hover:text-blue-200 transition-colors ${
+              className={`hover:text-blue-200 transition-colors hover:cursor-pointer ${
                 currentPage === "about" ? "text-blue-200 font-semibold" : ""
               }`}
             >
@@ -61,7 +61,7 @@ function Navbar({ currentPage, onPageChange }) {
             </button>
             <button
               onClick={() => onPageChange("contact")}
-              className={`hover:text-blue-200 transition-colors ${
+              className={`hover:text-blue-200 transition-colors hover:cursor-pointer ${
                 currentPage === "contact" ? "text-blue-200 font-semibold" : ""
               }`}
             >
@@ -69,7 +69,7 @@ function Navbar({ currentPage, onPageChange }) {
             </button>
             {/* <button
               onClick={() => onPageChange("home")}
-              className="bg-white text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-100 transition-colors font-semibold"
+              className="bg-white text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-100 hover:cursor-pointer transition-colors font-semibold"
             >
               Sign Up
             </button> */}

@@ -55,7 +55,7 @@ function TourDetails({tour,onPayment})
             </ul>
           </div>
           <button onClick={onPayment}
-           className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg text-xl font-semibold
+           className="w-full bg-blue-600 hover:cursor-pointer text-white py-4 px-6 rounded-lg text-xl font-semibold
            hover:bg-blue-700 transition-colors shadow-lg">
             Book Now! - {tour.price} £E
            </button>

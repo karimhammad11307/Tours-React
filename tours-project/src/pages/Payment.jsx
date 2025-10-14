@@ -1,5 +1,7 @@
 import PaymentMethod from "../components/PaymentMethod";
+
 function Payment() {
+
   const paymentMethods = [
     {
       id: "visa",
@@ -29,8 +31,7 @@ function Payment() {
         {/* Back button again */}
         <button
           onClick={() => window.history.back()}
-          className="mb-6 text-600 hover:text-blue-800
-        flex items-center"
+          className="mb-6 mx-auto rounded-full px-5 py-2 border-2 border-blue-200 hover:bg-blue-200 hover:text-white transition-all text-600 text-blue-800 bg-white flex hover:cursor-pointer"
         >
           Back to Your Details
         </button>

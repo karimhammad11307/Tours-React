@@ -67,12 +67,12 @@ function Navbar({ currentPage, onPageChange }) {
             >
               Contact
             </button>
-            <button
+            {/* <button
               onClick={() => onPageChange("home")}
               className="bg-white text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-100 transition-colors font-semibold"
             >
               Sign Up
-            </button>
+            </button> */}
           </div>
 
           {/* Mobile Menu Button */}

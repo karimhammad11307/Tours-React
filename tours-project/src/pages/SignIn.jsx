@@ -24,15 +24,10 @@ function SignIn({ onSignIn }) {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 px-4">
       <div className="relative max-w-md w-full bg-white rounded-2xl shadow-xl p-8">
-        <div className="flex justify-center mb-4 mx-auto absolute top-[10px] left-[25px] ">
+
+        <div className="flex justify-center mb-4 mx-auto absolute top-[10px] left-[25px]">
           <img src={logo} alt="logo" className="h-30 w-auto md:h-12" />
         </div>
-
-        {/* <div className="flex items-center justify-center space-x-3 mb-6  ">
-          <div className="text-2xl md:text-3xl font-bold text-gray-800">
-            Travista
-          </div>
-        </div> */}
 
         <div className="text-center mb-20">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">

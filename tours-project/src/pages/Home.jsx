@@ -1,5 +1,7 @@
 import TourCard from "../components/TourCard";
 import Footer from "../components/Footer";
+import landingImage from "../assets/landing-image.jpg";
+
 const tours = [
   {
     id:1 ,
@@ -64,9 +66,54 @@ const tours = [
 ]
 
 function Home({ onTourSelect }) {
+ const scrollToTours = () => {
+   const toursSection = document.getElementById('tours-section');
+   toursSection?.scrollIntoView({ behavior: 'smooth' });
+ };
+
  return(
   <>
-    <div className="container mx-auto px-4 py-8">
+    {/* Hero/Landing Section */}
+    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={landingImage} 
+          alt="Travel destination" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
+      </div>
+      
+      {/* Hero Content */}
+      <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
+        <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 drop-shadow-2xl animate-fade-in">
+          Your Journey Begins Here
+        </h1>
+        <p className="text-xl md:text-2xl lg:text-3xl mb-12 font-light tracking-wide drop-shadow-lg">
+          Explore breathtaking destinations and create unforgettable memories
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <button 
+            onClick={scrollToTours}
+            className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl">
+            Explore Tours
+          </button>
+          <button className="px-8 py-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-semibold rounded-lg text-lg border-2 border-white transition-all duration-300 transform hover:scale-105">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </section>
+
+    <div id="tours-section" className="container mx-auto px-4 py-8">
       <div className="text-center mb-12">
         <h1 className="text-5xl font-bold text-gray-800 mb-4">
           Discover Amazing Tours with us

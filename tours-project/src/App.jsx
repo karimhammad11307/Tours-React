@@ -40,7 +40,7 @@ function App() {
       case 'contact':
         return <Contact/>
       case 'tour-details':
-        return <TourDetails tour={selectedTour} onPayment={handlePayment} />
+        return <TourDetails tour={selectedTour} onPayment={handlePayment} onTourSelect={handleTourSelect}/>
       case 'payment':
         return <Payment/>
       default: 
@@ -51,7 +51,9 @@ function App() {
   return (
     <>
       <div className='min-h-screen bg-gray-50 w-full overflow-x-hidden'>
-        {isAuthenticated && <Navbar currentPage={currentPage} onPageChange={setCurrentPage}/>}
+        {isAuthenticated && <Navbar currentPage={currentPage} 
+        onPageChange={setCurrentPage}
+        onTourSelect={handleTourSelect}/>}
         {renderPage()}
       </div>
     </>
